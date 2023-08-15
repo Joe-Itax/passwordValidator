@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password Validator</title>
+  <!-- CSS of my CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="./asset/iconValidator.png" rel="icon" />
+  <!-- Link of icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- CSS of Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <main>
+    <h1>Password Validator</h1>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="boiteAVerifier">
+        <div class="aVerifierLength">
+          <p class="lengthPwd"><i class="ri-check-line valideIcon" id="valideIconLength"></i> &nbsp;<i
+              class="ri-close-line nonValideIcon" id="nonValideIconLength"></i> Longueur du mot de passe</p>
+        </div>
+        <div class="aVerifierStringUpper">
+          <p class="stringUpperPwd"><i class="ri-check-line valideIcon" id="valideIconUpper"></i> &nbsp;<i
+              class="ri-close-line nonValideIcon" id="nonValideIconUpper"></i> Contient au moins un Majuscule</p>
+        </div>
+        <div class="aVerifierStringLower">
+          <p class="stringLowerPwd"><i class="ri-check-line valideIcon" id="valideIconLower"></i> &nbsp;<i
+              class="ri-close-line nonValideIcon" id="nonValideIconLower"></i> Contient au moins une Minuscule</p>
+        </div>
+        <div class="aVerifierSpecialChar">
+          <p class="specialCharPwd"><i class="ri-check-line valideIcon" id="valideIconSpecialChar"></i> &nbsp;<i
+              class="ri-close-line nonValideIcon" id="nonValideIconSpecialChar"></i> Contient au moins un Caractère
+            spécial</p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </main>
+
+  <!-- JS of bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- My JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>

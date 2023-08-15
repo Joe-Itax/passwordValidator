@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 0 1px red inset; */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #15141f !important;
+  color: #fff !important;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+
+form {
+  border: 1px solid #fefeee;
+  border-radius: 20px;
+
+  padding: 2rem;
+}
+
+.valideIcon,
+.nonValideIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.valideIcon {
+  background: #198754;
+}
+
+.nonValideIcon {
+  background: #dc3545;
+}
+
+.boiteAVerifier {
+  /* display: none; */
+}
+
+.btn {
+  width: 100% !important;
+}
