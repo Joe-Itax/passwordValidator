@@ -22,13 +22,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 1rem;
   gap: 1rem;
 }
 
 form {
   border: 1px solid #fefeee;
   border-radius: 20px;
-
   padding: 2rem;
 }
 
@@ -53,4 +53,10 @@ form {
 
 .btn {
   width: 100% !important;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 1rem;
+  }
 }
