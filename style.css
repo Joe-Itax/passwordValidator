@@ -49,6 +49,7 @@ form {
 
 .valideIcon {
   background: #198754;
+  display: none;
 }
 
 .nonValideIcon {
