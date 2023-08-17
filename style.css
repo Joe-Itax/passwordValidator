@@ -26,10 +26,18 @@ main {
   gap: 1rem;
 }
 
+h1 {
+  text-align: center !important;
+}
+
 form {
   border: 1px solid #fefeee;
   border-radius: 20px;
   padding: 2rem;
+}
+
+.eyeIcon {
+  cursor: pointer;
 }
 
 .valideIcon,
@@ -58,5 +66,26 @@ form {
 @media (max-width: 500px) {
   form {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0;
+  }
+
+  form {
+    padding: .3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .inputPassword {
+    padding-left: .001rem !important;
+    padding-right: .001rem !important;
+  }
+
+  .labelPwd {
+    font-size: 1rem !important;
   }
 }

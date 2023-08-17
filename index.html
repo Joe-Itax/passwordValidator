@@ -21,14 +21,16 @@
     <h1>Password Validator</h1>
     <form class="row g-3">
 
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+      <div class="mb-3 input-group">
+        <span class="input-group-text labelPwd">Password</span>
+        <input type="password" class="form-control inputPassword" id="inputPassword">
+        <span class="input-group-text eyeIcon" title="Voir le mot de passe"><i class="ri-eye-line"></i></span>
       </div>
       <div class="boiteAVerifier">
         <div class="aVerifierLength">
           <p class="lengthPwd"><i class="ri-check-line valideIcon" id="valideIconLength"></i> &nbsp;<i
-              class="ri-close-line nonValideIcon" id="nonValideIconLength"></i> Longueur du mot de passe (8 caractères au minimum)</p>
+              class="ri-close-line nonValideIcon" id="nonValideIconLength"></i> Longueur du mot de passe (8 caractères
+            au minimum)</p>
         </div>
         <div class="aVerifierStringUpper">
           <p class="stringUpperPwd"><i class="ri-check-line valideIcon" id="valideIconUpper"></i> &nbsp;<i
