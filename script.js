@@ -40,7 +40,7 @@ const valideIconSpecialChar = document.querySelector("#valideIconSpecialChar");
 const nonValideIconSpecialChar = document.querySelector("#nonValideIconSpecialChar");
 ///-------
 const verification = function() {
-  // input.value.length <= 7 ? valideIconLength.style.display = "initial" : valideIconLength.style.display = "none";
+  //Verification Du length du password
   if (input.value.length < 8) {
     valideIconLength.style.display = "none";
     nonValideIconLength.style.display = "initial";
@@ -50,37 +50,37 @@ const verification = function() {
   }
 
   //Verification Des Chiffre
-  if(includeNumber.test(input.value)){
+  if (includeNumber.test(input.value)) {
     valideIconNumber.style.display = "initial";
     nonValideIconNumber.style.display = "none";
-  }else{
+  } else {
     valideIconNumber.style.display = "none";
     nonValideIconNumber.style.display = "initial";
   }
 
   //Verification Miniscule
-  if(includeLower.test(input.value)){
+  if (includeLower.test(input.value)) {
     valideIconLower.style.display = "initial";
     nonValideIconLower.style.display = "none";
-  }else{
+  } else {
     valideIconLower.style.display = "none";
     nonValideIconLower.style.display = "initial";
   }
 
   //Verification Majuscule
-  if(includeUpper.test(input.value)){
+  if (includeUpper.test(input.value)) {
     valideIconUpper.style.display = "initial";
     nonValideIconUpper.style.display = "none";
-  }else{
+  } else {
     valideIconUpper.style.display = "none";
     nonValideIconUpper.style.display = "initial";
   }
 
   //Verification Caractere special
-  if(includeSpecialChar.test(input.value)){
+  if (includeSpecialChar.test(input.value)) {
     valideIconSpecialChar.style.display = "initial";
     nonValideIconSpecialChar.style.display = "none";
-  }else{
+  } else {
     valideIconSpecialChar.style.display = "none";
     nonValideIconSpecialChar.style.display = "initial";
   }
