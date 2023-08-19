@@ -60,6 +60,10 @@ form {
   display: none;
 }
 
+.lengthPwdFeedback {
+  padding-left: 2rem;
+}
+
 .btn {
   width: 100% !important;
 }

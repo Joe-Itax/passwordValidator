@@ -41,6 +41,7 @@ const nonValideIconSpecialChar = document.querySelector("#nonValideIconSpecialCh
 ///-------
 const verification = function() {
   //Verification Du length du password
+  document.querySelector(".lengthPwdFeedback").innerHTML = `Longueur de votre mot de passe: ${input.value.length}`;
   if (input.value.length < 8) {
     valideIconLength.style.display = "none";
     nonValideIconLength.style.display = "initial";
