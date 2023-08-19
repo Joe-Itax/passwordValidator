@@ -21,7 +21,7 @@ const includeLower = /[a-z]/;
 const includeUpper = /[A-Z]/;
 const includeNumber = /[0-9]/;
 //const _includeSpecial = "$*!:;,?./§%£ø*\\#~@{}[]`|^+)(=&";
-const includeSpecialChar = /[$*!:;,?"'`./§%£ø*\#~@{}\[\]`|^+)(=&]/;
+const includeSpecialChar = /[$*!:;,?"'`\\./§%£ø*\#~@{}\[\]`|^+)(=&]/;
 // const inputValue = input.value;
 //Longueur du password
 const valideIconLength = document.querySelector("#valideIconLength");
