@@ -21,7 +21,7 @@ const includeLower = /[a-z]/;
 const includeUpper = /[A-Z]/;
 const includeNumber = /[0-9]/;
 //const _includeSpecial = "$*!:;,?./§%£ø*\\#~@{}[]`|^+)(=&";
-const includeSpecialChar = /[$*!:;,?"'`\\./§%£ø*\#~@{}\[\]`|^+)(=&]/;
+const includeSpecialChar = /[~!@#$%^*()-_=+[\]{};:,./ ?§`&'"|£µ´\ˇ÷]/;
 // const inputValue = input.value;
 //Longueur du password
 const valideIconLength = document.querySelector("#valideIconLength");
@@ -41,7 +41,7 @@ const nonValideIconSpecialChar = document.querySelector("#nonValideIconSpecialCh
 ///-------
 const verification = function() {
   //Verification Du length du password
-  document.querySelector(".lengthPwdFeedback").innerHTML = `Longueur de votre mot de passe: ${input.value.length}`;
+  document.querySelector(".lengthPwdFeedback").innerHTML = `Longueur de votre mot de passe: ${input.value.length} `;
   if (input.value.length < 8) {
     valideIconLength.style.display = "none";
     nonValideIconLength.style.display = "initial";

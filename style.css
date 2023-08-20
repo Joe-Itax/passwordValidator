@@ -77,6 +77,8 @@ form {
 @media (max-width: 400px) {
   body {
     padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   form {
@@ -92,5 +94,11 @@ form {
 
   .labelPwd {
     font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 310px) {
+  body {
+    padding-top: 2rem;
   }
 }
